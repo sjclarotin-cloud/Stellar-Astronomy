@@ -1,0 +1,153 @@
+/* THEME */
+body {
+    background-color: #0a0f24;      
+    color: #d6d8e3;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+p, li {
+    color: #bfc4d6;
+    line-height: 1.7;
+}
+
+/* Golden cosmic accent color */
+:root {
+    --accent: #ffcc66;
+    --glow: 0 0 15px rgba(255, 204, 102, 0.6);
+}
+
+/* SECTION STYLE */
+section {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    scroll-margin-top: 70px;
+}
+
+section h2 {
+    font-size: 38px;
+    margin-bottom: 5px;
+    text-shadow: var(--glow);
+}
+
+section p {
+    font-size: 16px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(5, 8, 20, 0.85);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.nav-link {
+    color: #d9d9e6 !important;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+    text-shadow: var(--glow);
+}
+
+/* IMAGE EFFECTS */
+.zoom-glow {
+    transition: 0.4s ease;
+    border-radius: 10px;
+}
+
+.zoom-glow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 204, 102, 0.4),
+                0 0 35px rgba(255, 204, 102, 0.2);
+}
+
+/* VIDEO STYLE */
+video {
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+/* LISTS */
+ul {
+    padding-left: 18px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* HEADERS UNDERLINE (Glow) */
+h5 {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+h5::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--accent);
+    box-shadow: var(--glow);
+    border-radius: 3px;
+}
+
+/* SMALL COSMIC FADE ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 1.2s ease;
+}
+
+/* CAROUSEL IMAGE FIX */
+#stellarCarousel .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#stellarCarousel .carousel-caption.top-center {
+    top: 20px;
+    bottom: auto;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #stellarCarousel .carousel-item img {
+        height: 300px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .zoom-glow:hover {
+        transform: scale(1.03);
+    }
+}
+
+/* ANCHOR FIX FOR STICKY NAVBAR */
+.section-anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+}

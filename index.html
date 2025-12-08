@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="author" content="Jerry C. Larotin Jr."/>
+  <meta name="description" content="This website offers an immersive journey through stellar astronomy—exploring how stars form, evolve, and shape the galaxies around them."/>
+  <meta name="keywords" content="HTML, CSS, Star Formation, Galactic Structures, Cosmic Phenomena, Observational Astronomy"/>
+  <link rel="icon" type="image/x-icon" href="images/ezes.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Stellar Astronomy</title>
+
+  <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="font-awesome/css/all.min.css"/>
+  <link rel="stylesheet" href="styles/stellarstyle.css"/>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+  <div class="container">
+    <a class="navbar-brand">Stellar Astronomy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-anchor">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#stars-anchor">Stars</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galaxies-anchor">Galaxies</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact-anchor">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home">
+  <div id="stellarCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/space1.jpg" class="d-block w-100" alt="Explore the Universe">
+        <div class="carousel-caption top-center">
+          <h3>Explore the Universe</h3>
+          <p>Discover stars, galaxies, and more.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/space2.jpg" class="d-block w-100" alt="Galaxies Beyond">
+        <div class="carousel-caption top-center">
+          <h3>Galaxies Beyond</h3>
+          <p>Experience cosmic wonders.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/space3.jpg" class="d-block w-100" alt="Reach for the Stars">
+        <div class="carousel-caption top-center">
+          <h3>Reach for the Stars</h3>
+          <p>Your cosmic journey begins here.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#stellarCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#stellarCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section py-5 mt-5">
+  <span id="about-anchor" class="section-anchor"></span>
+  <div class="container">
+    <h2 class="text-center mb-4">ABOUT</h2>
+    <div class="row gy-4 align-items-center">
+      <div class="col-lg-6">
+        <p>
+          Stellar Astronomy is dedicated to exploring the universe in an engaging and educational way.
+          From the birth of stars to the vast spiral arms of galaxies, we break down complex cosmic phenomena
+          into simple explanations supported by visuals and videos. Our mission is to make astronomy accessible
+          for everyone, whether you are a curious student, an amateur stargazer, or someone fascinated by the cosmos.
+        </p>
+        <p>Key topics you will explore in this journey include:</p>
+        <ul>
+          <li><strong>Star Formation:</strong> How stars are born in stellar nurseries and evolve over millions of years.</li>
+          <li><strong>Galactic Structures:</strong> The shapes, sizes, and classifications of galaxies across the universe.</li>
+          <li><strong>Cosmic Phenomena:</strong> Black holes, supernovae, nebulae, neutron stars, and other extraordinary events.</li>
+          <li><strong>Observational Astronomy:</strong> Tips for observing stars, planets, and other celestial objects.</li>
+        </ul>
+        <p>Follow this journey to see these concepts brought to life in the Stars and Galaxies sections below.</p>
+        <img src="images/about-illustration.jpg" class="img-fluid rounded zoom-glow mt-4" alt="About Illustration">
+      </div>
+      <div class="col-lg-6">
+        <h3 class="text-light">Featured Video</h3>
+        <div class="ratio ratio-16x9">
+          <iframe
+                src="https://www.youtube.com/embed/rkz34RuTYtg?si=CJIFMeQdLB6YxlGx"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STARS SECTION -->
+<section id="stars" class="container py-5 mt-5">
+  <span id="stars-anchor" class="section-anchor"></span>
+  <h2 class="text-center mb-4">STARS</h2>
+  <p class="text-center text-muted">Continuing from About: the lifecycle and wonders of stars</p>
+
+  <div class="row g-3 mt-4">
+    <div class="col-md-4"><img src="images/star1.jpg" class="img-fluid rounded zoom-glow" alt="Star 1"></div>
+    <div class="col-md-4"><img src="images/star2.jpg" class="img-fluid rounded zoom-glow" alt="Star 2"></div>
+    <div class="col-md-4"><img src="images/star3.jpg" class="img-fluid rounded zoom-glow" alt="Star 3"></div>
+  </div>
+
+  <div class="mt-4">
+    <h4>From Stellar Nurseries to Shining Giants</h4>
+    <p>As mentioned in About, stars are born in dense clouds of gas and dust called <strong>stellar nurseries</strong>. Gravity pulls these materials together, initiating nuclear fusion at the core. This is how a protostar becomes a main sequence star.</p>
+
+    <h4>Star Types and Evolution</h4>
+    <ul>
+      <li><strong>Main Sequence Stars:</strong> Stable stars like the Sun, burning hydrogen in their cores.</li>
+      <li><strong>Red Giants:</strong> Stars in later stages, expanding and cooling after hydrogen fuel runs out.</li>
+      <li><strong>White Dwarfs:</strong> Remaining cores of low-mass stars, slowly cooling over billions of years.</li>
+      <li><strong>Neutron Stars & Pulsars:</strong> Remnants of supernovae; extremely dense, sometimes emitting radio waves.</li>
+      <li><strong>Supernovae:</strong> Catastrophic explosions marking the death of massive stars, producing heavy elements.</li>
+    </ul>
+
+    <h4>Connecting to Cosmic Phenomena</h4>
+    <p>About introduced cosmic phenomena — supernovae, black holes, and nebulae. Here, we see how these events shape galaxies and seed the universe with elements.</p>
+
+    <h4>Observational Tips</h4>
+    <p>Telescopes and binoculars, as discussed in About, allow enthusiasts to observe star clusters, nebulae, and variable stars. This bridges the knowledge from About to real sky observations.</p>
+  </div>
+
+  <div class="text-center mt-4">
+    <video width="100%" autoplay muted loop controls class="zoom-glow">
+      <source src="Video/stars.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- GALAXIES SECTION -->
+<section id="galaxies" class="container py-5 mt-5">
+  <span id="galaxies-anchor" class="section-anchor"></span>
+  <h2 class="text-center mb-4">GALAXIES</h2>
+  <p class="text-center text-muted">Continuing from About & Stars: how stars form the vast structures of galaxies</p>
+
+  <div class="row g-3 mt-4">
+    <div class="col-md-4"><img src="images/galaxy1.jpg" class="img-fluid rounded zoom-glow" alt="Galaxy 1"></div>
+    <div class="col-md-4"><img src="images/galaxy2.jpg" class="img-fluid rounded zoom-glow" alt="Galaxy 2"></div>
+    <div class="col-md-4"><img src="images/galaxy3.jpg" class="img-fluid rounded zoom-glow" alt="Galaxy 3"></div>
+  </div>
+
+  <div class="mt-4">
+    <h4>Galaxies: Cosmic Cities of Stars</h4>
+    <p>As introduced in About, galaxies are enormous systems of stars, gas, dust, and dark matter. They are the cosmic cities where stars live, evolve, and die, creating a continuous cycle of matter in the universe.</p>
+
+    <h4>Types of Galaxies</h4>
+    <ul>
+      <li><strong>Spiral Galaxies:</strong> Disk-shaped with winding arms. Stars form actively in these arms, linking directly to star formation in About.</li>
+      <li><strong>Elliptical Galaxies:</strong> Contain mostly older stars, showing the long-term evolution of stellar populations.</li>
+      <li><strong>Irregular Galaxies:</strong> Chaotic shapes due to collisions, showing dynamic cosmic evolution.</li>
+      <li><strong>Lenticular Galaxies:</strong> Central bulge without spiral arms, between spiral and elliptical types.</li>
+    </ul>
+
+    <h4>Galactic Interactions</h4>
+    <p>Collisions, mergers, and tidal interactions shape star formation and trigger cosmic events. This connects About’s introduction of cosmic phenomena directly to galaxy evolution.</p>
+
+    <h4>Observational Connections</h4>
+    <p>Telescopes allow observation of galaxies across millions of light-years, reinforcing concepts from About and Stars for a continuous learning experience.</p>
+  </div>
+
+  <div class="text-center mt-4">
+    <video width="100%" autoplay muted loop controls class="zoom-glow">
+      <source src="Video/galaxy.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="container py-5 mt-5">
+  <span id="contact-anchor" class="section-anchor"></span>
+  <h2 class="text-center mb-4">CONTACT</h2>
+  <p class="text-center text-muted">Have questions? Send us a message!</p>
+
+  <div class="row mt-4">
+    <div class="col-md-6 mb-4">
+      <p><i class="fa fa-map-marker-alt me-2"></i> Kabacan, Philippines</p>
+      <p><i class="fa fa-phone me-2"></i> +63 930-7668-290</p>
+      <p><i class="fa fa-envelope me-2"></i> info@stellarastronomy.com</p>
+    </div>
+
+    <div class="col-md-6">
+      <form action="thankyou.html" method="get">
+        <div class="row g-2">
+          <div class="col-md-6"><input type="text" class="form-control" name="Name" placeholder="Name" required></div>
+          <div class="col-md-6"><input type="email" class="form-control" name="Email" placeholder="Email" required></div>
+        </div>
+        <textarea class="form-control mt-3" placeholder="Message" required></textarea>
+        <button class="btn btn-primary mt-3 w-100">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-4">
+  <p class="text-muted">Powered by Stellar Astronomy</p>
+</footer>
+
+<script src="bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
